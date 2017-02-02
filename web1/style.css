@@ -74,6 +74,7 @@ svg {
 }
 
 .nav-mob {
+    z-index:1000;
     position: fixed;
     margin-top: 50px;
     margin-left: -110%;
