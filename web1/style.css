@@ -19,8 +19,18 @@ body {
     color: #fff;
     padding: 10px;
 }
-
-
+/* This is for all the fist letter  */
+.first{
+  font-size: 35px;
+  font-family: cursive;
+  color:rgb(46, 56, 66);
+  float: left;
+  display: inline-block;
+  line-height: 40px;
+  width: 40px;
+  height: 40px;
+  padding: 0 2px;
+}
 /***** This is the responsive query******/
 
 .container {
@@ -31,12 +41,11 @@ body {
 .one {
     box-sizing: border-box;
     width: 100%;
-    height: 60vh;
     background: #21b2a6;
 }
 
 header {
-    padding: 0 5px;
+  
 }
 
 input[type="checkbox"] {
@@ -44,11 +53,14 @@ input[type="checkbox"] {
 }
 
 label {
+    background: rgba(33, 178, 166,0.5);
     box-sizing: border-box;
     display: block;
     width: 100%;
     position: fixed;
-    height: 50px;
+    top: 0;
+    left: 0;
+    height: 60px;
     padding: 5px 0;
 }
 
@@ -56,7 +68,7 @@ svg {
     position: fixed;
     top: 10px;
     left: 10px;
-    line-height: 50px;
+    line-height: 60px;
 }
 
 .logo {
@@ -65,28 +77,31 @@ svg {
     right: 10px;
     display: inline-block;
     line-height: 50px;
+    color:rgb(46, 56, 66);
 }
 
 #Menu:checked~.nav-mob {
-    margin: -15px;
+    margin-left:-2.4%;
+    padding: 0;
     margin-top: 50px;
     z-index: 100;
 }
 
+/* FOR THE NAV BLOCK CONTAINER MOB */
 .nav-mob {
     z-index:1000;
     position: fixed;
     margin-top: 50px;
     margin-left: -110%;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     padding: 10px;
     text-align: center;
     background: rgb(46, 56, 66);
     -webkit-transition: all 0.6s;
     transition: all 0.6s;
 }
-
+/* THIS IS FOR THE LINK FOT THE NAV MOB */
 nav a {
     display: block;
     font-family: 'Roboto', sans-serif;
@@ -103,7 +118,7 @@ nav a:hover {
     -webkit-transition: all 0.6s;
     transition: all 0.6s;
 }
-
+/* THIS IS FOR THE SOCIAL MEDIA ICON FOR THE NAV MOBILE */
 .social {
     width: 100%;
     padding: 50px 10px;
@@ -111,10 +126,13 @@ nav a:hover {
 }
 
 .icon {
+    display: inline-block;
     font-size: 30px;
     padding: 10px 10px 0 10px;
     cursor: pointer;
     margin: 0px 3px;
+     color: rgba(255, 255, 255, 0.5);
+
 }
 
 .icon:hover {
@@ -183,14 +201,12 @@ nav a:hover {
 
 
 /*****THIS IS THE END OF HOME PAGE *****/
-
+/* FOR THE MAIN CONTEN AFTER THE HOME PAGE  */
 main {
     width: 100%;
-    height: 100vh;
-    text-align: center;
     padding: 0 5px;
 }
-
+/* FOR THE IMAGE FOR MY PERFIL */
 .img-perfil {
     display: block;
     margin: auto;
@@ -198,9 +214,31 @@ main {
     height: 250px;
     border-radius: 50%;
 }
-
+/* FOR HE ABOUT TEXT */
+.about{
+  font-family: 'Lato', sans-serif;
+  text-align: left;
+  line-height: 24px;
+  font-size: 16px;
+  padding: 5px;
+}
+/* THIS IS FOR THE SUB-title */
+.sub {
+   font-family: 'Lato', sans-serif;
+   font-weight: 900;
+   text-align: center;
+   font-size: 24px;
+   color: #000;}
+/* THIS IS THE STAR OF THE FOOTER */
 footer {
-    height: 40vh;
+    width: 100%;
     background: rgb(46, 56, 66);
-    color: #fff;
+    color: rgba(255,255,255,0.5);
+    padding: 10px ;
+    text-align: center;
+}
+/* THE SOCIAL MEDIA ICON IN THE FOOTER  */
+.social-ft{
+ padding: 0 10px;
+  text-decoration: none;
 }
